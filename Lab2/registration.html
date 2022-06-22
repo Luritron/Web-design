@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lab2-Calculator</title>
+        <link rel="stylesheet" href="css\bootstrap.min.css">
+        <link rel="stylesheet" href="css\style.css">
+    </head>
+    <body id="showcasecalc">
+        <div class="topnav">
+            <div class="topnav-centered">
+                <a href="calculator.html">Home</a>
+            </div>
+            <img src="img\bullet-blue.png" class="image">
+            <a href="about.html">Bluelator</a>
+            <div class="topnav-right">
+                <a href="profile.html">Profile</a>
+                <a href="login.html" class="active">Login</a>
+            </div>
+        </div>
+        <main id="main-holder" class="center" >
+            <h1 id="login-header" style="font-size: 4em; margin-top: 50px;">Registration</h1>
+            <div id="login-error-msg-holder"> <!--Поправить классы когда перейду к JS-->
+                <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+            </div>
+            <form id="login-form">
+                <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+                <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+                <input type="text" name="email" class="login-form-field" placeholder="Email">
+                <input type="text" name="gender" class="login-form-field" placeholder="Gender">
+                <input type="text" name="birthday" class="login-form-field" placeholder="Birthday">
+                <input type="submit" value="Register" id="register-form-submit">
+            </form>
+            <a href="login.html">Already has login?</a>
+        </main>
+
+        <!-- jQuery (Bootstrap JS plugins depend on it) -->
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
